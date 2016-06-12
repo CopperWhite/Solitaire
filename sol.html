@@ -3,91 +3,28 @@
 	<head>
 		<meta charset='utf-8'>
 		<title>Solitaire</title>
-	<script src="vue.js"></script>
-	<script type="text/javascript" src="sol.js"></script>
-	<link href='sol.css' rel='stylesheet'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="sol.js"></script>
+		<link href='sol.css' rel='stylesheet'>
 	</head>
 	<body>
 		<table width="100%">
 			<tr>
-				<td width="850px">
-					<div id="app">
-						<div class="line">
-							<div class="void"></div>
-							<div class="void"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="void"></div>
-							<div class="void"></div>
-						</div>
-						<div class="line">
-							<div class="void"></div>
-							<div class="void"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="void"></div>
-							<div class="void"></div>
-						</div>
-						<div class="line">
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-						</div>
-						<div class="line">
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box empty"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-						</div>
-						<div class="line">
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-						</div>
-						<div class="line">
-							<div class="void"></div>
-							<div class="void"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="void"></div>
-							<div class="void"></div>
-						</div>
-						<div class="line">
-							<div class="void"></div>
-							<div class="void"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="box coin"></div>
-							<div class="void"></div>
-							<div class="void"></div>
-						</div>
-					</div>
+				<td width="750px" id='field'>
+					
 				</td>
 				<td>
-					<div>
-						<h1 align="center">Солитёр</h1>
-						<br> Игры «Солитер» зародились во Франции, и, по слухам, они обязаны своим возникновением заключенным в тюрьму аристократам. В конце XVIII века эта игра появилась в Англии и с тех пор разошлась по всему миру.
-						<br>
-						<h2>Правила игры.</h2>
-						<br> Любая фишка «перепрыгивает» через соседнюю фишку на свободное место за ней, после чего фишка, через которую был сделан прыжок, снимается с доски. Фишки могут передвигаться только по горизонтали или вертикали.
-						<br>
-						<h2>Результат игры.</h2>
-						<br>Игра считается выигранной только при точном достижении цели. Например, стандартная игра считается завершенной, только если с доски сняты все фишки, кроме одной. Хотя в некоторых играх можно выиграть разными способами, участнику обычно приходится предпринять множество попыток, прежде чем он найдет выигрышное решение.
+					<div id='result-container'>
+						<p><h3>Фишек срублено: </h3><h3 id='score'></h3></p>
 					</div>
+					<h1 align="center">Солитёр</h1>
+					<br> Игры «Солитер» зародились во Франции, и, по слухам, они обязаны своим возникновением заключенным в тюрьму аристократам. В конце XVIII века эта игра появилась в Англии и с тех пор разошлась по всему миру.
+					<br>
+					<h2>Правила игры.</h2>
+					<br> Любая фишка «перепрыгивает» через соседнюю фишку на свободное место за ней, после чего фишка, через которую был сделан прыжок, снимается с доски. Фишки могут передвигаться только по горизонтали или вертикали.
+					<br>
+					<h2>Результат игры.</h2>
+					<br>Игра считается выигранной только при точном достижении цели. Например, стандартная игра считается завершенной, только если с доски сняты все фишки, кроме одной. Хотя в некоторых играх можно выиграть разными способами, участнику обычно приходится предпринять множество попыток, прежде чем он найдет выигрышное решение.
 				</td>
 			</tr>
 		</table>

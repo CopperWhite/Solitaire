@@ -29,3 +29,19 @@
 .coin {
 	background-image: url(red.png);
 }
+.picked {
+	background-image: url(green.png);
+}
+h3 {
+	color: red;
+	font-size: 200%;
+	font-family: cursive;
+}
+#result-container {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+body {
+	background-image: url(background.jpg);
+}
